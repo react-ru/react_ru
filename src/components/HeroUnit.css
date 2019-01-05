@@ -1,0 +1,24 @@
+.HeroUnit {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  background-color: #343a40;
+}
+
+.HeroUnit__title {
+  font-size: 4rem;
+}
+
+.HeroUnit__first_line {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.HeroUnit__second_line {
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
