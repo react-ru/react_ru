@@ -1,13 +1,7 @@
 import React from "react";
 import { reduxForm, Field } from "redux-form";
-import {
-  Form,
-  FormGroup,
-  InputGroup,
-  InputGroupAddon,
-  Input
-} from "reactstrap";
-import { siteKey, secretKey } from "../constants/recaptcha";
+import { Form, FormGroup, Input } from "reactstrap";
+import { siteKey } from "../constants/recaptcha";
 import ReCAPTCHA from "react-google-recaptcha";
 
 export const AskQuestion = reduxForm({

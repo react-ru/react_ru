@@ -7,11 +7,6 @@ import {
   ModalBody,
   ModalFooter,
   Button,
-  Form,
-  FormGroup,
-  InputGroup,
-  InputGroupAddon,
-  Input,
   Alert
 } from "reactstrap";
 import { withModal } from "../HOCs/withModal";

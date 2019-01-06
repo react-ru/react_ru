@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardImg, CardBody, Button } from "reactstrap";
-import { Avatar } from "./Avatar";
 
 export const Moderator = ({ name, avatarSrc }) => {
   return (
