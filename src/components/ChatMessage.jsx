@@ -3,9 +3,9 @@ import { Media } from "reactstrap";
 import { distanceInWordsToNow } from "date-fns";
 import "./ChatMessage.css";
 
-export const ChatMessage = ({ id, from, text, date }) => {
+export const ChatMessage = ({ _id, from, text, date }) => {
   return (
-    <Media className="ChatMessage" id="id">
+    <Media className="ChatMessage" id={_id}>
       <Media className="ChatMessage__body" body>
         <div className="ChatMessage__time">
           {distanceInWordsToNow(date * 1000)}
