@@ -7,9 +7,7 @@ export const Moderator = ({ name, avatarSrc }) => {
       <CardImg top width="100%" src={avatarSrc} />
       <CardBody>
         <div className="text-center">
-          <Button tag="a" href={`tg://resolve?domain=${name}`}>
-            @{name}
-          </Button>
+          <Button tag="span">@{name}</Button>
         </div>
       </CardBody>
     </Card>
