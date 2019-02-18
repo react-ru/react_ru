@@ -4,9 +4,19 @@ import { map } from "lodash";
 import { endpointBase } from "../../constants/endpointBase";
 import { chatId } from "../../constants/chatId";
 import useFetch from "fetch-suspense";
+import { isEmpty } from "lodash";
 
 export const Messages = () => {
-  const renderMessage = props => <ChatMessage {...props} key={props._id} />;
+  const renderMessage = props => {
+    console.log("props.new_chat_members", props.new_chat_members);
+    return (
+      <ChatMessage
+        {...props}
+        isNewChatMember={!isEmpty(props.new_chat_members)}
+        key={props._id}
+      />
+    );
+  };
   const messages = useFetch(
     `${endpointBase}/api/latest_messages?chat_id=${chatId}&latest=7`
   );
