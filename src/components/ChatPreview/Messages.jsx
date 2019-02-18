@@ -8,7 +8,6 @@ import { isEmpty } from "lodash";
 
 export const Messages = () => {
   const renderMessage = props => {
-    console.log("props.new_chat_members", props.new_chat_members);
     return (
       <ChatMessage
         {...props}
