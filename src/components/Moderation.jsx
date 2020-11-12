@@ -20,8 +20,8 @@ export const Moderation = () => {
 
   return (
     <section style={sectionStyle}>
-      <h1>Модераторы</h1>
-      <div>
+      <h1>Стать модератором</h1>
+      {/* <div>
         <Moderator
           name='Юрий Чеботаев'
           nickname='ychebotaev'
@@ -37,7 +37,8 @@ export const Moderation = () => {
           avatar='http://реакт-чат.рф/img/alexander.jpg'
         />
         <WannabeModerator />
-      </div>
+      </div> */}
+      <WannabeModerator />
       <Rehabilitation />
     </section>
   )
