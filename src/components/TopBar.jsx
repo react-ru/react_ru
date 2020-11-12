@@ -1,5 +1,4 @@
 import React from 'react'
-import { LoginWithTelegram } from './LoginWithTelegram'
 
 export const TopBar = () => (
   <div
@@ -29,12 +28,6 @@ export const TopBar = () => (
           {/*****************************/}
         </div>
       </div>
-      {/* <LoginWithTelegram
-        width={175}
-        height={28}
-        login={'react_ru_bot'} // TODO: Take from .env file
-        origin={'http://реакт-чат.рф:3003'} // TODO: Take from .env file
-      /> */}
     </div>
   </div>
 )
