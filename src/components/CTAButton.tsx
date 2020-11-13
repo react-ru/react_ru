@@ -1,5 +1,7 @@
-import React, { FC } from 'react'
+import React, { FC, useCallback } from 'react'
 import styled from 'styled-components'
+
+declare let ym: Function;
 
 interface CTAButtonProps {}
 
@@ -25,8 +27,12 @@ const Root = styled.a`
 `
 
 export const CTAButton: FC<CTAButtonProps> = () => {
+  const handleClick = useCallback(() => {
+    ym(46609578, "reachGoal", "GOTO_CHAT")
+  }, [])
+
   return (
-    <Root href="tg://resolve?domain=react_ru">
+    <Root href="tg://resolve?domain=react_ru" onClick={handleClick}>
       Открыть в Telegram
     </Root>
   )
