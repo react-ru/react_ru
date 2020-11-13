@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
+import { useMediaQuery } from 'react-responsive'
 
 import { CTAButton } from './CTAButton'
 
@@ -51,13 +52,38 @@ const SubString = styled.p`
 `
 
 export const Hero: FC<HeroProps> = () => {
-  return (
-    <Root>
+  const isMobile = useMediaQuery({ query: '(max-width: 960px)' })
+  let firstBlock = null
+  let secondBlock = null
+
+  if (isMobile) {
+    firstBlock = (
       <Block>
         <Logo width={96} height={96} src="/img/icon.png" />
-        <Counter>1 014</Counter>
+        <Counter>1 014</Counter>
+      </Block>
+    )
+    secondBlock = (
+      <Block>
         <TextLogo>react_ru</TextLogo>
       </Block>
+    )
+  } else {
+    firstBlock = (
+      <Block>
+        <Logo width={96} height={96} src="/img/icon.png" />
+        <Counter>1 014</Counter>
+        <TextLogo>react_ru</TextLogo>
+      </Block>
+    )
+  }
+
+  console.log(isMobile)
+
+  return (
+    <Root>
+      {firstBlock}
+      {secondBlock}
       <Block>
         <SubString>Независимое сообщество React-разработчиков в Telegram</SubString>
       </Block>

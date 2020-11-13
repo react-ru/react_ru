@@ -16,18 +16,21 @@ const Root = styled.main`
 const H1 = styled.h1`
   font-weight: 300;
   font-size: 3rem;
+  color: #000000;
 `
 
 const P = styled.p`
   font-weight: 100;
   font-size: 1.1rem;
-  LIne-height: 1.4;
+  line-height: 1.4;
+  color: #000000;
 `
 
 const LI = styled.li`
   font-weight: 100;
   font-size: 1.1rem;
-  LIne-height: 1.4;
+  line-height: 1.4;
+  color: #000000;
 `
 
 export const Rules: FC<RulesProps> = () => {

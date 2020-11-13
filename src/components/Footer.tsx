@@ -5,6 +5,10 @@ interface FooterProps {}
 
 const Root = styled.footer`
   margin-top: 2rem;
+
+  @media (max-width: 960px) {
+    padding: 0 1rem;
+  }
 `
 
 const Paragraph = styled.p`
