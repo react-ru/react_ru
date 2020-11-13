@@ -1,5 +1,4 @@
 import React from 'react'
-import { Moderation } from '../components/Moderation'
 import { PrimaryCTA } from '../components/PrimaryCTA'
 
 export const Main = () => (
@@ -184,7 +183,29 @@ export const Main = () => (
           </li>
         </ol>
       </section>
-      <Moderation />
+      <section>
+        <h1>Стать модератором</h1>
+        <p>Модератором может стать любой желающий бесплатно.</p>
+        <p>Требования к модераторам:</p>
+        <ul>
+          <li>Высокий онлайн: регулярное посещение сообщества.</li>
+          <li>Соблюдение правил на этой странице.</li>
+          <li>Защита сообщества от спамеров, ботов и флейма.</li>
+          <li>Знание и понимание react.js.</li>
+        </ul>
+        <p>
+          Пишите <a href='https://t.me/ychebotaev'>@ychebotaev</a>, чтобы
+          присоединиться к модераторскому составу.
+        </p>
+      </section>
+      <section>
+        <h1>Реабилитация в сообществе</h1>
+        <p>Несправедливо забанилили?</p>
+        <p>Вы поняли свою ошибку и больше так не будете?</p>
+        <p>
+          Пишите <a href='https://t.me/ychebotaev'>@ychebotaev</a>, разберемся.
+        </p>
+      </section>
       <section>
         <h1>Организация на GitHub</h1>
         <p>

@@ -36,7 +36,7 @@ export const HeroUnit = () => (
           color: '#000000'
         }}
       >
-        972
+        1014
       </div>
       <span style={{ fontSize: '5rem', color: '#ffffff', fontWeight: 'bold' }}>
         react_ru
