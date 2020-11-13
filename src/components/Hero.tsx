@@ -54,7 +54,7 @@ export const Hero: FC<HeroProps> = () => {
   return (
     <Root>
       <Block>
-        <Logo width={96} height={96} src="http://реакт-чат.рф/img/icon.png" />
+        <Logo width={96} height={96} src="/img/icon.png" />
         <Counter>1 014</Counter>
         <TextLogo>react_ru</TextLogo>
       </Block>
